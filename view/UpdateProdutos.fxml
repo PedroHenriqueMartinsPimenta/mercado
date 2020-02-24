@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="629.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="controller.UpdateProdutosController">
+    <stylesheets>
+        <URL value="@/style/updateprodutos.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="152.0" layoutY="470.0" prefHeight="17.0" prefWidth="106.0" text="CNPJ da empresa" textFill="#f5f4f4" />
+      <Label layoutX="153.0" layoutY="409.0" prefHeight="17.0" prefWidth="68.0" text="Preço" textFill="#f5f4f4" />
+      <Label layoutX="152.0" layoutY="351.0" prefHeight="17.0" prefWidth="68.0" text="Validade" textFill="#f5f4f4" />
+      <Label layoutX="152.0" layoutY="290.0" prefHeight="17.0" prefWidth="68.0" text="Quantidade" textFill="#f5f4f4" />
+      <Label layoutX="152.0" layoutY="105.0" prefHeight="17.0" prefWidth="61.0" text="Descrição" textFill="#f5f4f4" />
+      <Label layoutX="151.0" layoutY="44.0" prefHeight="17.0" prefWidth="52.0" text="Codigo" textFill="#f5f4f4" />
+      <TextField fx:id="codigo" editable="false" layoutX="151.0" layoutY="61.0" prefHeight="44.0" prefWidth="318.0" promptText="Codigo" styleClass="input" AnchorPane.leftAnchor="151.0" AnchorPane.rightAnchor="131.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextArea fx:id="descricao" layoutX="151.0" layoutY="118.0" prefHeight="163.0" prefWidth="318.0" promptText="Descrição" styleClass="input" AnchorPane.leftAnchor="151.0" AnchorPane.rightAnchor="131.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextArea>
+      <DatePicker fx:id="validade" layoutX="151.0" layoutY="365.0" prefHeight="44.0" prefWidth="318.0" promptText="Validade" styleClass="input" AnchorPane.leftAnchor="151.0" AnchorPane.rightAnchor="131.0" />
+      <Button fx:id="atualizar" layoutX="151.0" layoutY="548.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="144.0" text="Atualizar" textFill="#d0cece" AnchorPane.leftAnchor="151.0">
+         <font>
+            <Font name="Arial Black" size="15.0" />
+         </font>
+      </Button>
+      <TextField fx:id="cnpj" layoutX="151.0" layoutY="487.0" prefHeight="44.0" prefWidth="318.0" promptText="CNPJ do fornecedor" styleClass="input" AnchorPane.leftAnchor="151.0" AnchorPane.rightAnchor="131.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="preco" layoutX="151.0" layoutY="426.0" prefHeight="44.0" prefWidth="318.0" promptText="Preco" styleClass="input" AnchorPane.leftAnchor="151.0" AnchorPane.rightAnchor="131.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="qtd" layoutX="151.0" layoutY="307.0" prefHeight="44.0" prefWidth="318.0" promptText="Quantidade" styleClass="input" AnchorPane.leftAnchor="151.0" AnchorPane.rightAnchor="131.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Button fx:id="cancelar" layoutX="325.0" layoutY="548.0" mnemonicParsing="false" prefHeight="59.0" prefWidth="144.0" text="Cancelar" textFill="#d0cece" AnchorPane.rightAnchor="131.0">
+         <font>
+            <Font name="Arial Black" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

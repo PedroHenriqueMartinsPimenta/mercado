@@ -1,0 +1,22 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+    -fx-background-color: #333030;
+    -fx-background-image:url(../midia/logo.png);
+    -fx-background-position: center center;
+    -fx-background-repeat: no-repeat;
+    -fx-background-size:30%;
+}
+.button{
+    -fx-background-color: #888282;
+    -fx-cursor: hand;
+}
+.button:hover{
+    -fx-background-color: #a59f9f
+}
+
+.input{
+    -fx-background-color: #ced6db;  
+}

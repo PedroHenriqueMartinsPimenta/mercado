@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ClientesController">
+    <stylesheets>
+        <URL value="@/style/clientes.css" />
+    </stylesheets>
+   <children>
+      <TextField fx:id="cpf" layoutX="52.0" layoutY="45.0" promptText="Filtar por CPF" styleClass="input" AnchorPane.leftAnchor="52.0" AnchorPane.topAnchor="45.0">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </TextField>
+      <Button fx:id="pesquisar" layoutX="219.0" layoutY="45.0" mnemonicParsing="false" text="Pesquisar" textFill="#e8e5e5" AnchorPane.leftAnchor="219.0" AnchorPane.topAnchor="45.0" />
+      <TableView fx:id="table" layoutX="12.0" layoutY="100.0" prefHeight="290.0" prefWidth="581.0" AnchorPane.bottomAnchor="10.0" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="7.0" AnchorPane.topAnchor="100.0" />
+      <ToolBar fx:id="opc" layoutX="446.0" layoutY="38.0" prefHeight="40.0" prefWidth="59.0" visible="false" AnchorPane.rightAnchor="95.0" AnchorPane.topAnchor="38.0">
+        <items>
+          <Button fx:id="editar" mnemonicParsing="false" text="Editar" textFill="#f5ebeb" />
+        </items>
+      </ToolBar>
+   </children>
+</AnchorPane>

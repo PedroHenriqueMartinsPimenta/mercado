@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="572.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="controller.EstatisticasHorariosController">
+    <stylesheets>
+        <URL value="@/style/estatisticashorarios.css" />
+    </stylesheets>
+   <children>
+      <PieChart fx:id="pierChart" layoutX="98.0" layoutY="136.0" prefHeight="363.0" prefWidth="442.0" title="Horarios" AnchorPane.bottomAnchor="73.0" AnchorPane.leftAnchor="98.0" AnchorPane.rightAnchor="60.0" AnchorPane.topAnchor="136.0" />
+      <Label fx:id="legenda" layoutX="98.0" layoutY="78.0" text="Níveis de venda por horarios em 0000:" textFill="#ebe8e8" AnchorPane.leftAnchor="98.0" AnchorPane.topAnchor="78.0">
+         <font>
+            <Font name="Arial Black" size="15.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

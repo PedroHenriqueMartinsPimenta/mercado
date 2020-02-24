@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UpdateFornecedorController">
+    <stylesheets>
+        <URL value="@/style/updatefornecedor.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="136.0" layoutY="168.0" text="Nome " textFill="#eeebeb" AnchorPane.leftAnchor="139.0" />
+      <Label layoutX="139.0" layoutY="88.0" text="CNPJ" textFill="#eeebeb" AnchorPane.leftAnchor="139.0" />
+      <Button fx:id="cadastrar" layoutX="341.0" layoutY="278.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="146.0" text="Atualizar" textFill="#c9c8c8" AnchorPane.rightAnchor="113.0" AnchorPane.topAnchor="278.0">
+         <font>
+            <Font name="Arial Narrow Bold Italic" size="21.0" />
+         </font>
+      </Button>
+      <TextField fx:id="nome" layoutX="136.0" layoutY="185.0" prefHeight="51.0" prefWidth="348.0" promptText="Nome" styleClass="input" AnchorPane.leftAnchor="136.0" AnchorPane.rightAnchor="116.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="cnpj" editable="false" layoutX="136.0" layoutY="105.0" prefHeight="51.0" prefWidth="348.0" promptText="CNPJ" styleClass="input" AnchorPane.leftAnchor="136.0" AnchorPane.rightAnchor="116.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Button fx:id="voltar" layoutX="136.0" layoutY="278.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="146.0" text="Voltar" textFill="#c9c8c8" AnchorPane.leftAnchor="136.0" AnchorPane.topAnchor="278.0">
+         <font>
+            <Font name="Arial Narrow Bold Italic" size="21.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

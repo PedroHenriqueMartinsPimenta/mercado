@@ -1,0 +1,21 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+    -fx-background-color: #333030;
+}
+.input{
+    -fx-background-color: #ced6db;  
+}
+.button{
+    -fx-background-color: #ced6db;
+    -fx-cursor: hand;
+    
+}
+.button:hover{
+    -fx-background-color: #8ea0ac;
+}
+.loga{
+    -fx-background-color: #ccccff;
+}

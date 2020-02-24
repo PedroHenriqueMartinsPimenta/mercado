@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="corpo" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1450.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.PaginaUserController">
+    <stylesheets>
+        <URL value="@/style/paginauser.css" />
+    </stylesheets>
+   <children>
+      <Button fx:id="iniciar" layoutX="163.0" layoutY="189.0" mnemonicParsing="false" onAction="#iniciarVenda" opacity="0.78" prefHeight="124.0" prefWidth="217.0" text="Iniciar venda" textFill="#f0f7ff" AnchorPane.leftAnchor="163.0" AnchorPane.topAnchor="189.0">
+         <font>
+            <Font name="Arial Black" size="22.0" />
+         </font>
+      </Button>
+      <TableView fx:id="table" layoutX="972.0" layoutY="145.0" prefHeight="554.0" prefWidth="478.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="145.0" />
+      <Label fx:id="esc" layoutX="972.0" layoutY="86.0" text="ESC - cancelar" textFill="#e8e6e6" AnchorPane.rightAnchor="390.0" AnchorPane.topAnchor="115.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="enter" layoutX="972.0" layoutY="89.0" text="Espaço - add a tabela" textFill="#e8e6e6" AnchorPane.rightAnchor="345.0" AnchorPane.topAnchor="89.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <MenuBar layoutY="2.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+                  <MenuItem mnemonicParsing="false" onAction="#addProdutos" text="Adicionar produtos" />
+                  <MenuItem mnemonicParsing="false" onAction="#addFornecedor" text="Adicionar fornecedor" />
+                  <MenuItem mnemonicParsing="false" onAction="#addCliente" text="Cadastrar clientes" />
+                  <MenuItem mnemonicParsing="false" onAction="#addUsers" text="Adicionar usuarios" />
+              <MenuItem mnemonicParsing="false" onAction="#fechar" text="Sair" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#editClientes" text="Clientes" />
+                  <MenuItem mnemonicParsing="false" onAction="#updateProdutos" text="Produtos" />
+                  <MenuItem mnemonicParsing="false" onAction="#updateFornecedores" text="Fornecedores" />
+                  <MenuItem mnemonicParsing="false" onAction="#updateUsuarios" text="Usuarios" />
+                  <MenuItem mnemonicParsing="false" onAction="#updateVenda" text="Vendas" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Statistic">
+              <items>
+                  <MenuItem mnemonicParsing="false" onAction="#getHorarios" text="Horarios" />
+                <MenuItem mnemonicParsing="false" onAction="#getMes" text="Meses" />
+                  <MenuItem mnemonicParsing="false" onAction="#getAnos" text="Anos" />
+              </items>
+            </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#manualUsuario" text="Manual de usuario" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Label fx:id="F2" layoutX="972.0" layoutY="60.0" text="F2 - finalizar compra" textFill="#e8e6e6" AnchorPane.rightAnchor="351.0" AnchorPane.topAnchor="63.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <TextField fx:id="codigo" layoutX="485.0" layoutY="168.0" prefHeight="54.0" prefWidth="375.0" promptText="Codigo" styleClass="input" visible="false" AnchorPane.leftAnchor="485.0" AnchorPane.rightAnchor="590.0" AnchorPane.topAnchor="168.0">
+         <font>
+            <Font name="Arial Black" size="15.0" />
+         </font>
+      </TextField>
+      <Label fx:id="valor" layoutX="75.0" layoutY="297.0" text="Valor: R$0,00" textFill="#ebe8e8" visible="false" AnchorPane.leftAnchor="75.0" AnchorPane.topAnchor="297.0">
+         <font>
+            <Font name="Arial Black" size="36.0" />
+         </font>
+      </Label>
+      <TextField fx:id="qtd" layoutX="485.0" layoutY="423.0" prefHeight="54.0" prefWidth="375.0" promptText="Quantidade" styleClass="input" text="1" visible="false" AnchorPane.leftAnchor="485.0" AnchorPane.rightAnchor="590.0" AnchorPane.topAnchor="423.0">
+         <font>
+            <Font name="Arial Black" size="15.0" />
+         </font>
+      </TextField>
+      <TextArea fx:id="descricaoProduto" editable="false" layoutX="485.0" layoutY="250.0" prefHeight="148.0" prefWidth="375.0" styleClass="input" visible="false" AnchorPane.leftAnchor="485.0" AnchorPane.rightAnchor="590.0" AnchorPane.topAnchor="250.0" />
+      <DatePicker fx:id="validade" editable="false" layoutX="485.0" layoutY="504.0" prefHeight="54.0" prefWidth="375.0" styleClass="input" visible="false" AnchorPane.leftAnchor="485.0" AnchorPane.rightAnchor="590.0" AnchorPane.topAnchor="504.0" />
+      <TextField fx:id="precoUnitario" editable="false" layoutX="485.0" layoutY="588.0" prefHeight="54.0" prefWidth="375.0" promptText="Preço unitario" styleClass="input" text="0.0" visible="false" AnchorPane.leftAnchor="485.0" AnchorPane.rightAnchor="590.0" AnchorPane.topAnchor="588.0">
+         <font>
+            <Font name="Arial Black" size="15.0" />
+         </font>
+      </TextField>
+      <Label fx:id="menssagem" layoutX="686.0" layoutY="135.0" text="Messagem" textFill="#e8e6e6" visible="false">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="labelCodigo" layoutX="485.0" layoutY="147.0" text="Codigo do produto" textFill="#ddd6d6" visible="false" AnchorPane.leftAnchor="485.0" AnchorPane.topAnchor="147.0" />
+      <Label fx:id="labelDesc" layoutX="485.0" layoutY="233.0" text="Descrição" textFill="#ddd6d6" visible="false" AnchorPane.leftAnchor="485.0" AnchorPane.topAnchor="233.0" />
+      <Label fx:id="labelQtd" layoutX="485.0" layoutY="406.0" text="Quantidade" textFill="#ddd6d6" visible="false" AnchorPane.leftAnchor="485.0" AnchorPane.topAnchor="406.0" />
+      <Label fx:id="labelValidade" layoutX="485.0" layoutY="487.0" text="Validade" textFill="#ddd6d6" visible="false" AnchorPane.leftAnchor="485.0" AnchorPane.topAnchor="487.0" />
+      <Label fx:id="labelValorUnitario" layoutX="485.0" layoutY="571.0" text="Valor unitario" textFill="#ddd6d6" visible="false" AnchorPane.leftAnchor="485.0" AnchorPane.topAnchor="571.0" />
+      <Label fx:id="del" layoutX="1138.0" layoutY="63.0" text="DEL - Remover item" textFill="#e8e6e6" AnchorPane.rightAnchor="184.0" AnchorPane.topAnchor="63.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="412.0" prefWidth="370.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+    <stylesheets>
+        <URL value="@/style/login.css" />
+    </stylesheets>
+   <children>
+      <TextField fx:id="cpf" layoutX="92.0" layoutY="126.0" prefHeight="36.0" prefWidth="231.0" promptText="CPF" styleClass="input" AnchorPane.leftAnchor="92.0" AnchorPane.rightAnchor="47.0">
+         <cursor>
+            <Cursor fx:constant="DEFAULT" />
+         </cursor>
+         <font>
+            <Font size="15.0" />
+         </font></TextField>
+      <PasswordField fx:id="senha" layoutX="92.0" layoutY="217.0" prefHeight="36.0" prefWidth="231.0" promptText="Senha" styleClass="input" AnchorPane.leftAnchor="92.0" AnchorPane.rightAnchor="47.0">
+         <font>
+            <Font size="15.0" />
+         </font></PasswordField>
+      <Button layoutX="47.0" layoutY="294.0" mnemonicParsing="false" onAction="#entrar" prefHeight="36.0" prefWidth="276.0" text="Entrar" AnchorPane.leftAnchor="47.0" AnchorPane.rightAnchor="47.0">
+         <font>
+            <Font name="Arial Black" size="14.0" />
+         </font></Button>
+      <ImageView fitHeight="37.0" fitWidth="36.0" layoutX="47.0" layoutY="126.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="47.0" AnchorPane.rightAnchor="287.0">
+         <image>
+            <Image url="@../midia/user.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="37.0" fitWidth="36.0" layoutX="47.0" layoutY="217.0" pickOnBounds="true" preserveRatio="true" AnchorPane.leftAnchor="47.0" AnchorPane.rightAnchor="287.0">
+         <image>
+            <Image url="@../midia/key.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="84.0" fitWidth="109.0" layoutX="143.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" styleClass="loga" AnchorPane.leftAnchor="143.0" AnchorPane.rightAnchor="143.0">
+         <image>
+            <Image url="@../midia/logo.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

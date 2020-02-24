@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdicionarFornecedorController">
+    <stylesheets>
+        <URL value="@/style/adicionarfornecedor.css" />
+    </stylesheets>
+   <children>
+      <TextField fx:id="cnpj" layoutX="226.0" layoutY="95.0" prefHeight="51.0" prefWidth="149.0" promptText="CNPJ" styleClass="input" AnchorPane.leftAnchor="126.0" AnchorPane.rightAnchor="126.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="nome" layoutX="126.0" layoutY="175.0" prefHeight="51.0" prefWidth="348.0" promptText="Nome" styleClass="input" AnchorPane.leftAnchor="126.0" AnchorPane.rightAnchor="126.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Button fx:id="cadastrar" layoutX="129.0" layoutY="268.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="348.0" text="Cadastrar" textFill="#c9c8c8" AnchorPane.leftAnchor="126.0" AnchorPane.rightAnchor="126.0">
+         <font>
+            <Font name="Arial Narrow Bold Italic" size="21.0" />
+         </font>
+      </Button>
+      <Label fx:id="legenda" layoutX="451.0" layoutY="14.0" text="Fornecedor já cadastrado" textFill="#cdcaca" visible="false" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0" />
+      <Label layoutX="129.0" layoutY="78.0" text="CNPJ" textFill="#eeebeb" AnchorPane.leftAnchor="129.0" AnchorPane.rightAnchor="339.0" />
+      <Label layoutX="126.0" layoutY="158.0" text="Nome " textFill="#eeebeb" AnchorPane.leftAnchor="129.0" AnchorPane.rightAnchor="339.0" />
+   </children>
+</AnchorPane>

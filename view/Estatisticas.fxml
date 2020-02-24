@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.chart.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="613.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="controller.EstatisticasController">
+    <stylesheets>
+        <URL value="@/style/estatisticas.css" />
+    </stylesheets>
+   <children>
+      <Label fx:id="legenda" layoutX="88.0" layoutY="68.0" text="Mes com maior nivel de venda:" textFill="#ebe8e8" AnchorPane.leftAnchor="88.0" AnchorPane.rightAnchor="233.0" AnchorPane.topAnchor="68.0">
+         <font>
+            <Font name="Arial Black" size="15.0" />
+         </font>
+      </Label>
+      <PieChart fx:id="pierChart" layoutX="88.0" layoutY="126.0" prefHeight="363.0" prefWidth="442.0" title="Meses" AnchorPane.bottomAnchor="124.0" AnchorPane.leftAnchor="88.0" AnchorPane.rightAnchor="70.0" AnchorPane.topAnchor="126.0" />
+   </children>
+</AnchorPane>

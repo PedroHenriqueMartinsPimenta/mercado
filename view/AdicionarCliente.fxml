@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="612.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdicionarClienteController">
+    <stylesheets>
+        <URL value="@/style/adicionarcliente.css" />
+    </stylesheets>
+   <children>
+      <TextField fx:id="cpf" layoutX="142.0" layoutY="69.0" prefHeight="49.0" prefWidth="339.0" promptText="CPF" styleClass="input" AnchorPane.leftAnchor="120.0" AnchorPane.rightAnchor="120.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="nome" layoutX="141.0" layoutY="142.0" prefHeight="49.0" prefWidth="339.0" promptText="Nome" styleClass="input" AnchorPane.leftAnchor="120.0" AnchorPane.rightAnchor="120.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="sobrenome" layoutX="141.0" layoutY="207.0" prefHeight="49.0" prefWidth="339.0" promptText="Sobrenome" styleClass="input" AnchorPane.leftAnchor="120.0" AnchorPane.rightAnchor="120.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="rua" layoutX="142.0" layoutY="273.0" prefHeight="49.0" prefWidth="339.0" promptText="Rua" styleClass="input" AnchorPane.leftAnchor="120.0" AnchorPane.rightAnchor="120.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="cidade" layoutX="142.0" layoutY="339.0" prefHeight="49.0" prefWidth="339.0" promptText="Cidade" styleClass="input" AnchorPane.leftAnchor="120.0" AnchorPane.rightAnchor="120.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="estado" layoutX="142.0" layoutY="409.0" prefHeight="49.0" prefWidth="339.0" promptText="Estado" styleClass="input" AnchorPane.leftAnchor="120.0" AnchorPane.rightAnchor="120.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Button fx:id="cadastrar" layoutX="141.0" layoutY="491.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="339.0" text="Cadastrar" textFill="#f2f0f0" AnchorPane.leftAnchor="120.0" AnchorPane.rightAnchor="120.0">
+         <font>
+            <Font name="Arial Black" size="15.0" />
+         </font>
+      </Button>
+      <Label fx:id="legenda" layoutX="475.0" layoutY="14.0" text="Cliente já cadastrado" textFill="#eeeaea" visible="false" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="14.0" />
+      <Label layoutX="142.0" layoutY="52.0" text="CPF" textFill="#e8e4e4" AnchorPane.leftAnchor="122.0" AnchorPane.rightAnchor="430.0" />
+      <Label layoutX="142.0" layoutY="125.0" prefHeight="17.0" prefWidth="53.0" text="Nome" textFill="#e8e4e4" AnchorPane.leftAnchor="122.0" AnchorPane.rightAnchor="405.0" />
+      <Label layoutX="142.0" layoutY="191.0" prefHeight="17.0" prefWidth="78.0" text="Sobrenome" textFill="#e8e4e4" AnchorPane.leftAnchor="122.0" AnchorPane.rightAnchor="380.0" />
+      <Label layoutX="142.0" layoutY="256.0" text="Rua" textFill="#e8e4e4" AnchorPane.leftAnchor="122.0" AnchorPane.rightAnchor="430.0" />
+      <Label layoutX="142.0" layoutY="322.0" prefHeight="17.0" prefWidth="64.0" text="Cidade" textFill="#e8e4e4" AnchorPane.leftAnchor="122.0" AnchorPane.rightAnchor="394.0" />
+      <Label layoutX="142.0" layoutY="388.0" prefHeight="17.0" prefWidth="53.0" text="Estado" textFill="#e8e4e4" AnchorPane.leftAnchor="122.0" AnchorPane.rightAnchor="405.0" />
+   </children>
+</AnchorPane>

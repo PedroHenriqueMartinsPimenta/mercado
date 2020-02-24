@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="584.0" prefWidth="610.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UpdateClienteController">
+    <stylesheets>
+        <URL value="@/style/updatecliente.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="152.0" layoutY="398.0" prefHeight="17.0" prefWidth="53.0" text="Estado" textFill="#e8e4e4" AnchorPane.leftAnchor="152.0" AnchorPane.rightAnchor="405.0" AnchorPane.topAnchor="398.0" />
+      <Label layoutX="152.0" layoutY="332.0" prefHeight="17.0" prefWidth="64.0" text="Cidade" textFill="#e8e4e4" AnchorPane.leftAnchor="152.0" AnchorPane.rightAnchor="394.0" AnchorPane.topAnchor="332.0" />
+      <Label layoutX="152.0" layoutY="266.0" text="Rua" textFill="#e8e4e4" AnchorPane.leftAnchor="152.0" AnchorPane.rightAnchor="437.0" AnchorPane.topAnchor="266.0" />
+      <Label layoutX="152.0" layoutY="201.0" prefHeight="17.0" prefWidth="78.0" text="Sobrenome" textFill="#e8e4e4" AnchorPane.leftAnchor="152.0" AnchorPane.rightAnchor="380.0" AnchorPane.topAnchor="201.0" />
+      <Label layoutX="152.0" layoutY="135.0" prefHeight="17.0" prefWidth="53.0" text="Nome" textFill="#e8e4e4" AnchorPane.leftAnchor="152.0" AnchorPane.rightAnchor="405.0" AnchorPane.topAnchor="135.0" />
+      <Label layoutX="152.0" layoutY="62.0" text="CPF" textFill="#e8e4e4" AnchorPane.leftAnchor="152.0" AnchorPane.rightAnchor="437.0" AnchorPane.topAnchor="62.0" />
+      <Button fx:id="cadastrar" layoutX="151.0" layoutY="501.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="134.0" text="Atualizar" textFill="#f2f0f0" AnchorPane.leftAnchor="151.0" AnchorPane.topAnchor="501.0">
+         <font>
+            <Font name="Arial Black" size="15.0" />
+         </font>
+      </Button>
+      <TextField fx:id="estado" layoutX="152.0" layoutY="419.0" prefHeight="49.0" prefWidth="339.0" promptText="Estado" styleClass="input" AnchorPane.leftAnchor="151.0" AnchorPane.rightAnchor="120.0" AnchorPane.topAnchor="419.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="cidade" layoutX="152.0" layoutY="349.0" prefHeight="49.0" prefWidth="339.0" promptText="Cidade" styleClass="input" AnchorPane.leftAnchor="151.0" AnchorPane.rightAnchor="120.0" AnchorPane.topAnchor="349.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="rua" layoutX="152.0" layoutY="283.0" prefHeight="49.0" prefWidth="339.0" promptText="Rua" styleClass="input" AnchorPane.leftAnchor="151.0" AnchorPane.rightAnchor="120.0" AnchorPane.topAnchor="283.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="sobrenome" layoutX="151.0" layoutY="217.0" prefHeight="49.0" prefWidth="339.0" promptText="Sobrenome" styleClass="input" AnchorPane.leftAnchor="151.0" AnchorPane.rightAnchor="120.0" AnchorPane.topAnchor="217.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="nome" layoutX="151.0" layoutY="152.0" prefHeight="49.0" prefWidth="339.0" promptText="Nome" styleClass="input" AnchorPane.leftAnchor="151.0" AnchorPane.rightAnchor="120.0" AnchorPane.topAnchor="152.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="cpf" editable="false" layoutX="152.0" layoutY="79.0" prefHeight="49.0" prefWidth="339.0" promptText="CPF" styleClass="input" AnchorPane.leftAnchor="152.0" AnchorPane.rightAnchor="119.0" AnchorPane.topAnchor="79.0">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </TextField>
+      <Button fx:id="cancelar" layoutX="357.0" layoutY="501.0" mnemonicParsing="false" prefHeight="60.0" prefWidth="134.0" text="Cancelar" textFill="#f2f0f0" AnchorPane.rightAnchor="119.0" AnchorPane.topAnchor="501.0">
+         <font>
+            <Font name="Arial Black" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

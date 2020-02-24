@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="controller.UsuariosController">
+    <stylesheets>
+        <URL value="@/style/usuarios.css" />
+    </stylesheets>
+   <children>
+      <ToggleButton fx:id="contDelete" layoutX="586.0" layoutY="88.0" mnemonicParsing="false" visible="false" AnchorPane.rightAnchor="109.0" AnchorPane.topAnchor="88.0">
+         <graphic>
+            <Button mnemonicParsing="false" onAction="#deletar" text="Deletar" textFill="#f5f0f0">
+               <font>
+                  <Font name="Arial Black" size="12.0" />
+               </font>
+            </Button>
+         </graphic>
+      </ToggleButton>
+      <ToggleButton fx:id="contentEdit" layoutX="505.0" layoutY="88.0" mnemonicParsing="false" visible="false" AnchorPane.rightAnchor="196.0" AnchorPane.topAnchor="88.0">
+         <graphic>
+            <Button mnemonicParsing="false" onAction="#recuperar" text="senha" textFill="#ebe8e8">
+               <font>
+                  <Font name="Arial Black" size="12.0" />
+               </font>
+               <tooltip>
+                  <Tooltip text="Enviar email de recuperação de senha" />
+               </tooltip>
+            </Button>
+         </graphic>
+      </ToggleButton>
+      <ToggleButton fx:id="contentRecuperacao" layoutX="588.0" layoutY="88.0" mnemonicParsing="false" visible="false" AnchorPane.rightAnchor="29.0" AnchorPane.topAnchor="88.0">
+         <graphic>
+            <Button mnemonicParsing="false" onAction="#editar" text="Editar" textFill="#ebe8e8">
+               <font>
+                  <Font name="Arial Black" size="12.0" />
+               </font>
+            </Button>
+         </graphic>
+      </ToggleButton>
+      <TableView fx:id="table" layoutX="24.0" layoutY="185.0" prefHeight="273.0" prefWidth="665.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="12.0" AnchorPane.rightAnchor="12.0" AnchorPane.topAnchor="127.0">
+         <columns>
+            <TableColumn fx:id="cpf" prefWidth="142.0" text="CPF" />
+            <TableColumn fx:id="usuario" prefWidth="199.0" text="Usuario" />
+            <TableColumn fx:id="tbMail" prefWidth="320.0" text="E-mail" />
+         </columns>
+      </TableView>
+      <Button fx:id="pesquisar" layoutX="216.0" layoutY="70.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="84.0" text="Pesquisar" textFill="#ebe9e9" AnchorPane.leftAnchor="216.0" AnchorPane.topAnchor="70.0">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </Button>
+      <TextField fx:id="psCpf" layoutX="26.0" layoutY="70.0" prefHeight="37.0" prefWidth="181.0" promptText="CPF" styleClass="input" AnchorPane.leftAnchor="26.0" AnchorPane.topAnchor="70.0">
+         <font>
+            <Font name="Arial Black" size="13.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>

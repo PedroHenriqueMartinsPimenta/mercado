@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="513.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.UpdateUsuarioController">
+    <stylesheets>
+        <URL value="@/style/updateusuario.css" />
+    </stylesheets>
+   <children>
+      <Label layoutX="135.0" layoutY="204.0" prefHeight="17.0" prefWidth="49.0" text="E-mail" textFill="#f5f4f4" />
+      <Label layoutX="135.0" layoutY="121.0" prefHeight="17.0" prefWidth="105.0" text="Nome usuario" textFill="#f5f4f4" />
+      <Label layoutX="135.0" layoutY="50.0" text="CPF" textFill="#f5f4f4" />
+      <Button fx:id="atualizar" layoutX="333.0" layoutY="316.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="152.0" text="Atualizar" textFill="#e8e5e5" AnchorPane.rightAnchor="115.0" AnchorPane.topAnchor="316.0">
+         <font>
+            <Font name="Arial Black" size="15.0" />
+         </font>
+      </Button>
+      <TextField fx:id="mail" layoutX="135.0" layoutY="222.0" prefHeight="54.0" prefWidth="355.0" promptText="E-mail" styleClass="input" AnchorPane.leftAnchor="135.0" AnchorPane.rightAnchor="110.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="nome_user" layoutX="135.0" layoutY="140.0" prefHeight="54.0" prefWidth="355.0" promptText="Nome usuario" styleClass="input" AnchorPane.leftAnchor="135.0" AnchorPane.rightAnchor="110.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <TextField fx:id="cpf" editable="false" layoutX="135.0" layoutY="67.0" prefHeight="54.0" prefWidth="355.0" promptText="CPF" styleClass="input" AnchorPane.leftAnchor="135.0" AnchorPane.rightAnchor="110.0">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </TextField>
+      <Button fx:id="voltar" layoutX="135.0" layoutY="316.0" mnemonicParsing="false" prefHeight="66.0" prefWidth="152.0" text="Voltar" textFill="#e8e5e5" AnchorPane.leftAnchor="135.0" AnchorPane.topAnchor="316.0">
+         <font>
+            <Font name="Arial Black" size="15.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

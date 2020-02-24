@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="462.0" prefWidth="692.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="controller.FornecedoresController">
+    <stylesheets>
+        <URL value="@/style/fornecedores.css" />
+    </stylesheets>
+   <children>
+      <TextField fx:id="psCnpj" layoutX="51.0" layoutY="76.0" prefHeight="37.0" prefWidth="181.0" promptText="CNPJ" styleClass="input" AnchorPane.leftAnchor="51.0" AnchorPane.topAnchor="76.0">
+         <font>
+            <Font name="Arial Black" size="13.0" />
+         </font>
+      </TextField>
+      <Button fx:id="pesquisar" layoutX="241.0" layoutY="76.0" mnemonicParsing="false" prefHeight="37.0" prefWidth="84.0" text="Pesquisar" textFill="#ebe9e9" AnchorPane.leftAnchor="241.0" AnchorPane.topAnchor="76.0">
+         <font>
+            <Font name="Arial Black" size="12.0" />
+         </font>
+      </Button>
+      <TableView fx:id="table" layoutX="14.0" layoutY="175.0" prefHeight="273.0" prefWidth="665.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="13.0" AnchorPane.rightAnchor="13.0" AnchorPane.topAnchor="175.0">
+         <columns>
+            <TableColumn fx:id="tbCnpj" prefWidth="179.0" text="CNPJ" />
+            <TableColumn fx:id="nome" prefWidth="486.0" text="Nome" />
+         </columns>
+      </TableView>
+      <ToggleButton fx:id="contentEdit" layoutX="416.0" layoutY="82.0" mnemonicParsing="false" visible="false" AnchorPane.rightAnchor="204.0" AnchorPane.topAnchor="82.0">
+         <graphic>
+            <Button mnemonicParsing="false" onAction="#editar" text="Editar" textFill="#ebe8e8">
+               <font>
+                  <Font name="Arial Black" size="12.0" />
+               </font>
+            </Button>
+         </graphic>
+      </ToggleButton>
+      <ToggleButton fx:id="contDelete" layoutX="497.0" layoutY="82.0" mnemonicParsing="false" visible="false" AnchorPane.rightAnchor="115.0" AnchorPane.topAnchor="82.0">
+         <graphic>
+            <Button mnemonicParsing="false" onAction="#deletar" text="Deletar" textFill="#f5f0f0">
+               <font>
+                  <Font name="Arial Black" size="12.0" />
+               </font>
+            </Button>
+         </graphic>
+      </ToggleButton>
+   </children>
+</AnchorPane>
