@@ -1,4 +1,4 @@
-LISENÇA PDV 2.0
+LICENÇA PDV 2.0 
 Este software foi desenvolvido por Pedro Henrique Martins Pimenta, e todos seus direitos são reservados.
 
 ------------------------------------------------------------------
